@@ -1,0 +1,30 @@
+{
+  "name": "dzhi/phpinfo",
+  "description": "Simple phpinfo file that simulates composer project CI step in Dockerfiles.",
+  "homepage": "https://github.com/pentago/phpinfo-composer",
+  "keywords": [
+    "php",
+    "phpinfo",
+    "docker",
+    "composer",
+    "ci"
+  ],
+  "authors": [
+    {
+      "name": "dzhi",
+      "email": "dzhi@yopmail.com"
+    }
+  ],
+  "license": "MIT",
+  "require": {
+    "php": ">=5.0.0"
+  },
+  "config": {
+    "optimize-autoloader": true
+  },
+  "autoload": {
+    "psr-4": {
+      "phpInfo\\": "src/"
+    }
+  }
+}
